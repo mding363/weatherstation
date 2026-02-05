@@ -2,7 +2,7 @@
 
 ## Eclipse Mosquitto Broker + Python venv + Paho MQTT
 
-The following are the steps how to setup the weather station project. 
+The following are the steps how to setup the weather station project. The project owner is Minjie Ding 484364
 
 1 Create and use a **Python virtual environment**(venv).
 2 Install and run the **Eclipse Mosquitto** MQTT broker.
