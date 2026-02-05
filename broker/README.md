@@ -1,6 +1,6 @@
-#Weather station on macOS
+# Weather station on macOS
 
-##Eclipse Mosquitto Broker + Python venv + Paho MQTT
+## Eclipse Mosquitto Broker + Python venv + Paho MQTT
 
 The following are the steps how to setup the weather station project. 
 
@@ -12,8 +12,8 @@ The following are the steps how to setup the weather station project.
     4.2 one **publisher** (sending messages)
 5 Experiment with **QoS levels** and **retained messages**[B in MQTT
 
-##1 Prerequisites
-###1.1 Install Homebrew
+## 1 Prerequisites
+### 1.1 Install Homebrew
 On macOS, the easiest way to install Mosquitto is with Homebrew.
 Open Terminal and run:
 ```bash
@@ -27,7 +27,7 @@ The verify:
 brew --vision
 ```
 
-###1.2. Install Python3 (if needed)
+### 1.2. Install Python3 (if needed)
 
 Many macOs systems already have Python3, but you can also install it via Homebrew:
 
@@ -275,7 +275,7 @@ For example: visibility is Qos=0, retained=False,
              the last sent message will be sent if the subscriber disconnected and reconnected again. 
 
 
-11.1 Run the QoS =1
+### 11.1 Run the QoS =1
 
 In a Terminal with the virtual environment active:
 
@@ -310,7 +310,7 @@ Expected output (simplified):
 [PUBLISHER] publishing message: temperature is 19.67, windspeed is 61.33, and visibility is 1898.71
 ```
 
-11.2 Run the retain=True
+### 11.2 Run the retain=True
 
 In a Terminal with the virtual environment active:
 
@@ -358,13 +358,13 @@ Expected output (simplified)
 [PUBLISHER] publishing message: temperature is 10.16, windspeed is 25.0, and visibility is 1964.56
 [PUBLISHER] publishing message: temperature is 10.73, windspeed is 23.75, and visibility is 1965.03
 ```
-##12. Stopping everything
+## 12. Stopping everything
 
 - To stop the **publisher scripts**: go to their Terminal window and press `Ctrl + C`. 
 - To stop the **subscriber scripts**: go to their Terminal window and press `Ctrl + C`.
 - To stop the **broker** (Mosquitto): go to the broker Terminal window and press `Ctrl + C`.
 
-##13. Troubleshotting
+## 13. Troubleshotting
 **1. `ModuleNotFoundError: No module named 'paho'`**
 
 - Make sure your **virtual environment is activated** (`(.venv)` visible in the prompt).
@@ -397,7 +397,7 @@ Expected output (simplified)
 
 ---
 
-##14. How this example works
+## 14. How this example works
 
 - The *weatherstation broker* is the *middleman* that receives and routes messages.
 - The **subscriber** tells the broker:
